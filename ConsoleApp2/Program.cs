@@ -28,11 +28,15 @@ namespace ConsoleApp2
                 strings.Add($"{beginWorkingTime}-{newconsultation}");
 
                 beginWorkingTime = newconsultation;
+                
 
             }
+            foreach (var item in strings)
+            {
+                Console.WriteLine(item);
+            }
 
-
-            Console.WriteLine( strings.ToArray());
+            //Console.WriteLine( strings.ToArray());
             Console.ReadKey();
         }
     }
